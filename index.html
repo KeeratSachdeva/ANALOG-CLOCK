@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANALOG CLOCK</title>
+
+    <style type="text/css">
+        iframe{
+            width: 100%;
+            height: 40vw;
+        }
+    </style>
+</head>
+<body>
+    <iframe src="Clock-1.html" frameborder="0"></iframe>
+    <button id="btn">CLOCK 2</button>
+    
+    <script type="text/javascript">
+        var clock1 = true;
+
+        function changeClock(){
+            if(clock1) {
+                document.querySelector('iframe').setAttribute('src', 'Clock-2.html');
+                btn.innerHTML = 'CLOCK 1';
+                clock1 = false;
+            }
+            else{   
+                document.querySelector('iframe').setAttribute('src', 'Clock-1.html');
+                btn.innerHTML = 'CLOCK 2';
+                clock1 = true;
+            }
+        }
+
+        btn.addEventListener('click', changeClock);
+
+    </script>
+</body>
+</html>
