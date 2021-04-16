@@ -1,34 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ANALOG CLOCK</title>
 
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SETTING UP THE VIEWPORT -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- PAGE TITLE -->
+    <title>ANALOG CLOCK</title>
+    
+    <!-- INTERNAL CSS -->
     <style type="text/css">
+
+        /* FONT IMPORT */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+        
+        /* CSS RESET */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       
+        /* IFRAME */
         iframe{
-            width: 100%;
+            width: 100vw;
             height: 40vw;
         }
+
+        /* BUTTON */
+        #btn{
+            display: block;
+            width: 16vw;
+            margin: 1vw auto;
+            padding: 0.3vw;
+
+            font-size: 3vw;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: bold;
+
+            color: white;
+            background-color: #b10000;
+            border: 0.2vw solid black;
+            
+            transition-property: box-shadow;
+            transition-duration: 1.2s;
+
+            cursor: pointer;
+        }
+
+        #btn:hover{
+            box-shadow: inset 16vw 0px black;
+        }
+
     </style>
+
 </head>
+
 <body>
-    <iframe src="Clock-1.html" frameborder="0"></iframe>
-    <button id="btn">CLOCK 2</button>
     
+    <!-- IFRAME -->
+    <iframe src="Clock-1.html" frameborder="0"></iframe>
+    
+    <!-- BUTTON -->
+    <button id="btn">CLOCK - 2</button>
+    
+    <!-- INTERNAL JS -->
     <script type="text/javascript">
+        
         var clock1 = true;
 
         function changeClock(){
+            
             if(clock1) {
                 document.querySelector('iframe').setAttribute('src', 'Clock-2.html');
-                btn.innerHTML = 'CLOCK 1';
+                btn.innerHTML = 'CLOCK - 1';
                 clock1 = false;
             }
+
             else{   
                 document.querySelector('iframe').setAttribute('src', 'Clock-1.html');
-                btn.innerHTML = 'CLOCK 2';
+                btn.innerHTML = 'CLOCK - 2';
                 clock1 = true;
             }
         }
@@ -36,5 +93,7 @@
         btn.addEventListener('click', changeClock);
 
     </script>
+
 </body>
+
 </html>
