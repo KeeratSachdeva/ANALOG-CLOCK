@@ -54,6 +54,7 @@ body{
     /* opacity: 0.9; */
 }
 
+
 /* SECONDS' HAND */
 #seconds{
     width: 10%;
@@ -64,5 +65,14 @@ body{
     top: 15.6%;
     
     transform-origin: 65.3% 67.9%;
-    opacity: 0.9;
+    opacity: 0.97;
+}
+
+/* CENTER CIRCLE */
+.clock img:nth-child(4){
+    width: 7.1%;
+
+    position: absolute;
+    top: 46.5%;
+    left: 46.4%;
 }
