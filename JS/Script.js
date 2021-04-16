@@ -5,8 +5,8 @@ function rotateHands(){
     let m = date.getMinutes();
     let s = date.getSeconds();
 
-    let hoursRotation = 30 * h + m / 2;
-    let minutesRotation = 6 * m;
+    let hoursRotation = 30 * h + m / 2  + s / 120;
+    let minutesRotation = 6 * m + s / 10;
     let secondsRotation = 6 * s;
 
     hours.style.transform = `rotate(${hoursRotation}deg)`;
