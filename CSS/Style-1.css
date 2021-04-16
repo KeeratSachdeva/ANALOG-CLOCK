@@ -40,7 +40,7 @@ body{
     
     transform-origin: bottom;      /* Adjusting the Axis of Rotation.*/
     
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
 /* MINUTES' HAND */
@@ -57,7 +57,7 @@ body{
     
     transform-origin: bottom;
 
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
 /* SECONDS' HAND */
@@ -73,4 +73,13 @@ body{
     top: 9.8%;
     
     transform-origin: bottom;
+}
+
+/* CENTER CIRCLE */
+.clock img{
+    width: 10%;
+
+    position: absolute;
+    top: 44.7%;
+    left: 45%;
 }
