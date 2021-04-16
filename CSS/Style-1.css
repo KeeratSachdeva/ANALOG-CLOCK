@@ -1,0 +1,75 @@
+/* CSS RESET */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* BODY */
+body{
+    background-color: #f2f2f2;
+}
+
+/* CLOCK */
+.clock{
+    position: relative;       /* To Position the Three Hands. */
+    
+    width: 37vw;              /* For Responsive Design. Can't Zoom in. */
+    height: 37vw;             
+    margin: 20px auto;
+
+    background: url('../DATA/IMAGES/CLOCK 1.png') no-repeat;
+    background-size: 100%;    /* To Fit the Background. */ 
+}
+
+/* HOURS' HAND */
+#hours{
+    /* Using % units for Responsiveness. */
+    background-color: black;
+    border-radius: 12px;
+
+    width: 2.9%;
+    height: 23.2%;
+    
+    position: absolute;
+    top: 27.2%;
+    left: 48.5%;
+    
+    transform-origin: bottom;      /* Adjusting the Axis of Rotation.*/
+    transition-property: transform;
+    transition-duration: 1s;
+    
+    opacity: 0.9;
+}
+
+/* MINUTES' HAND */
+#minutes{
+    background-color: black;
+    border-radius: 12px;
+
+    width: 2.5%;
+    height: 36%;
+    
+    position: absolute;
+    top: 13.8%;
+    left: 48.8%;
+    
+    transform-origin: bottom;
+    transition-property: transform;
+    transition-duration: 1s;
+    opacity: 0.9;
+}
+
+/* SECONDS' HAND */
+#seconds{
+    background-color: red;
+    border-radius: 12px;
+
+    width: 1.2%;
+    height: 40%;
+    
+    position: absolute;
+    left: 49.2%;
+    top: 9.8%;
+    
+    transform-origin: bottom;
+}
