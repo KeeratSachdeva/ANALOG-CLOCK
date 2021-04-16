@@ -7,6 +7,10 @@
 /* BODY */
 body{
     background-color: #fcf8f1;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 /* CLOCK */
@@ -15,7 +19,7 @@ body{
     
     width: 37vw;              /* For Responsive Design. Can't Zoom in. */
     height: 37vw;             
-    margin: 20px auto;
+    margin-top: 1.2vw;
 
     background: url('../DATA/IMAGES/CLOCK 2.png') no-repeat;
     background-size: 100%;    /* To Fit the Background. */ 
@@ -32,8 +36,6 @@ body{
     left: 46%;
     
     transform-origin: 47.7% 88%;      /* Adjusting the Axis of Rotation.*/
-    transition-property: transform;
-    transition-duration: 1s;
 
     /* opacity: 0.9; */
 }
@@ -48,8 +50,6 @@ body{
     left: 44.3%;
     
     transform-origin: 61.7% 90.7%;
-    transition-property: transform;
-    transition-duration: 1s;
 
     /* opacity: 0.9; */
 }
