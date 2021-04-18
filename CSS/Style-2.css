@@ -32,8 +32,8 @@ body{
     height: 26%;
     
     position: absolute;
-    top: 27.3%;
-    left: 46%;
+    top: 26.3%;
+    left: 45.65%;
     
     transform-origin: 47.7% 88%;      /* Adjusting the Axis of Rotation.*/
 
@@ -47,7 +47,7 @@ body{
     
     position: absolute;
     top: 17.8%;
-    left: 44.3%;
+    left: 44.65%;
     
     transform-origin: 61.7% 90.7%;
 
@@ -61,10 +61,11 @@ body{
     height: 50%;
     
     position: absolute;
-    left: 43.1%;
+    left: 43.2%;
     top: 15.6%;
     
     transform-origin: 65.3% 67.9%;
+    
     opacity: 0.97;
 }
 
@@ -74,5 +75,5 @@ body{
 
     position: absolute;
     top: 46.5%;
-    left: 46.4%;
+    left: 46.2%;
 }

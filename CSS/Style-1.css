@@ -36,7 +36,7 @@ body{
     
     position: absolute;
     top: 27.2%;
-    left: 48.5%;
+    left: 48.4%;
     
     transform-origin: bottom;      /* Adjusting the Axis of Rotation.*/
     
@@ -53,7 +53,7 @@ body{
     
     position: absolute;
     top: 13.8%;
-    left: 48.8%;
+    left: 48.7%;
     
     transform-origin: bottom;
 
@@ -64,12 +64,12 @@ body{
 #seconds{
     background-color: red;
     border-radius: 12px;
-
+    
     width: 1.2%;
     height: 40%;
     
     position: absolute;
-    left: 49.2%;
+    left: 49.3%;
     top: 9.8%;
     
     transform-origin: bottom;
@@ -80,6 +80,6 @@ body{
     width: 10%;
 
     position: absolute;
-    top: 44.7%;
-    left: 45%;
+    top: 44.9%;
+    left: 44.9%;
 }
